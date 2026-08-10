@@ -1,17 +1,39 @@
 aid: commons
 name: Commons
-description: 'Commons is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Commons is an Oakland, California consumer climate-fintech company founded
+  in 2018 by Sanchali Seth Pal and operated under the name Joro until its March 2023
+  rebrand. Its free iOS and Android app connects a user''s bank accounts and credit
+  cards through Plaid and runs every transaction through a proprietary carbon-estimation
+  engine, the Carbonizer, which translates dollars spent into an estimate of kilograms
+  of CO2e, alongside budgeting, savings goals, expert-reviewed sustainable brand ratings,
+  a rewards program, monthly community challenges and an optional paid offset membership.
+  The company has raised roughly USD 13.9 million across three rounds from investors
+  including Sequoia Capital and Amasia. Commons is a direct-to-consumer mobile product
+  rather than an API vendor: thecommons.earth is a Webflow marketing site with no developer
+  portal, no API reference and no machine-readable contract, its brand directory and
+  member exchange run on Next.js and Softr respectively, and its only public GitHub
+  organization, CommonsTech, holds a single 2023 repository publishing carbon-offset
+  provider evaluations rather than code.'
+image: https://cdn.prod.website-files.com/638c4a662a2fb8862605c818/657249a045c2ae42715e27e9_icon_1024_circle.png
 url: https://raw.githubusercontent.com/api-evangelist/commons/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profile
+x-tier-reason: no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-09'
 modified: '2026-08-09'
 tags:
 - Company
+- Climate Tech
+- Carbon Footprint
+- Carbon Offsets
+- Personal Finance
+- Consumer Fintech
+- Sustainability
+- Mobile Application
+- Consumer Application
+- California
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +41,77 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/commons-domain-security.yml
+- type: LLMsTxt
+  url: llms/commons-llms.txt
 - type: Website
+  url: https://www.thecommons.earth/
+- type: About
+  url: https://www.thecommons.earth/about-us
+- type: HowItWorks
+  url: https://www.thecommons.earth/how-it-works
+- type: FAQ
+  url: https://www.thecommons.earth/faq
+- type: Support
+  url: mailto:info@thecommons.earth
+- type: Careers
+  url: https://www.thecommons.earth/careers
+- type: Blog
+  url: https://www.thecommons.earth/blog
+- type: BlogFeeds
+  url: https://www.thecommons.earth/blog/rss.xml
+- type: Podcast
+  url: https://www.thecommons.earth/second-nature-podcast
+- type: Press
+  url: https://guiltless-cent-6ba.notion.site/COMMONS-PRESS-KIT-2f7360be3dd74eb9be47643560b945e9
+- type: GitHubOrganization
+  url: https://github.com/CommonsTech
+- type: iOSApp
+  url: https://apps.apple.com/us/app/commons-smart-money-for-good/id1438446236
+- type: AndroidApp
+  url: https://play.google.com/store/apps/details?id=tech.joro
+- type: TermsOfService
+  url: https://www.thecommons.earth/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.thecommons.earth/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/commonsearth/
+- type: Instagram
+  url: https://www.instagram.com/commonsearth/
+- type: Facebook
+  url: https://www.facebook.com/commonsearth/about/
+- type: TikTok
+  url: https://www.tiktok.com/@commons.earth
+- type: SecondaryMarket
   url: https://forgeglobal.com/commons_stock/
+- type: SecondaryMarketListing
+  url: https://equityzen.com/company/joro/
+x-enrichment:
+  date: '2026-08-09'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Commons is a direct-to-consumer mobile app that consumes Plaid rather than exposing anything
+    of its own — thecommons.earth is a Webflow marketing site that returns a real 404 for
+    /openapi.json, /llms.txt and every /.well-known/ path, api./docs./developer.thecommons.earth
+    do not resolve at all, and the only public GitHub organization, CommonsTech, holds one 2023
+    repository of carbon-offset provider evaluations with no code in it.
+  evidence:
+  - url: https://www.thecommons.earth/openapi.json
+    status: 404
+  - url: https://www.thecommons.earth/llms.txt
+    status: 404
+  - url: https://www.thecommons.earth/.well-known/agent-card.json
+    status: 404
+  - url: https://brands.thecommons.earth/openapi.json
+    status: 404
+  - url: https://api.thecommons.earth/
+    status: 0
+  - url: https://joro.tech/openapi.json
+    status: 404
+  checked: '2026-08-09'

@@ -42,5 +42,10 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Commons is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/commons_stock/
+Commons is an Oakland, California consumer climate-fintech company founded in 2018 by Sanchali Seth Pal and operated as Joro until its March 2023 rebrand. Its free iOS and Android app connects bank accounts and credit cards through Plaid and scores every transaction with a proprietary carbon-estimation engine (the Carbonizer) into estimated kilograms of CO2e, alongside budgeting, savings goals, sustainable brand ratings, rewards and an optional paid carbon-offset membership.
+
+Commons publishes no public API: no developer portal, no API reference, no OpenAPI/AsyncAPI/GraphQL contract, no MCP server and no A2A agent card were found on any Commons-controlled host. See `x-coverage` in `apis.yml` for the probed URLs and their HTTP statuses.
+
+- https://www.thecommons.earth/
+- https://github.com/CommonsTech
+- https://forgeglobal.com/commons_stock/ (secondary-market listing)
