@@ -14,6 +14,17 @@ description: 'Commons is an Oakland, California consumer climate-fintech company
   member exchange run on Next.js and Softr respectively, and its only public GitHub
   organization, CommonsTech, holds a single 2023 repository publishing carbon-offset
   provider evaluations rather than code.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/638c4a662a2fb8862605c818/657249a045c2ae42715e27e9_icon_1024_circle.png
 url: https://raw.githubusercontent.com/api-evangelist/commons/refs/heads/main/apis.yml
 x-type: company
