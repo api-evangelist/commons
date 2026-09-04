@@ -25,6 +25,18 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/638c4a662a2fb8862605c818/657249a045c2ae42715e27e9_icon_1024_circle.png
 url: https://raw.githubusercontent.com/api-evangelist/commons/refs/heads/main/apis.yml
 x-type: company
